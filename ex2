@@ -1,16 +1,12 @@
-// Online Java Compiler
-// Use this editor to write, compile and run your Java code online
 import java.util.Scanner;
-class shopping{
-    Scanner s=new Scanner(System.in);
-    void details()
-    {
+public class shopping{
+    Scanner s = new Scanner(System.in);
     int id;
     int n,i;
-    String[30] name;
-    int telno;
-    String[30] address;
-    System.out.println("Enter number of customers:");
+    string name[];
+    int telno[];
+    string address[];
+    System.out.print("Enter number of customers:");
     n=s.nextInt();
     for(i=0;i<n;i++)
     {
@@ -21,7 +17,6 @@ class shopping{
         telno[i]=s.nextInt();
         System.out.println("Enter Address:");
         address[i]=s.nextLine();
-    }
     }
     void show()
     {
@@ -37,14 +32,10 @@ class shopping{
 }
 class main
 {
-    public static void main(String args[])
+    public static void main()
     {
         shopping obj=new shopping();
-        obj.details();
-        obj.display();
+        obj.show();
         
     }
 }
-    
-   
-    
