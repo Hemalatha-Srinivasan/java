@@ -1,39 +1,45 @@
 import java.util.Scanner;
-    class shop{
-    int id;
-    int n,i;
-    String name[];
-    int telno[];
-    String address[];
+class shop{
+    int id,n,i;
+    String name[]=new String[4];
+    int telno[]=new int[4];
+    String address[]=new String[4];
     void get()
     {
-        Scanner s = new Scanner(System.in);
+        Scanner s=new Scanner(System.in);
         System.out.print("Enter number of customers:");
         n=s.nextInt();
-        for(i=0;i<n;i++)
+     
+        for(i=1;i<=n;i++)
         {
-            System.out.println("Enter details of" + i+1 + "Customer");
-            System.out.println("Enter Name:");
+            System.out.println();
+            System.out.print("Enter Customer Name:");
+            s.nextLine();
             name[i]=s.nextLine();
-            System.out.println("Enter Telephone No:");
-            telno[i]=s.nextInt();
-            System.out.println("Enter Address:");
+            System.out.print("Enter Address:");
             address[i]=s.nextLine();
+            System.out.print("Enter Telephone No:");
+            telno[i]=s.nextInt();
+            
         }
     }
     void show()
     {
-        for(i=0;i<n;i++)
+        System.out.println();
+        System.out.println("********************");
+        System.out.println("Customer Details");
+        System.out.println("********************");
+        for(i=1;i<=n;i++)
         {
-            System.out.println("Details of" + i+1 +"Customer:");
-            System.out.println("Customer Id: " +i+1);
+            System.out.println();
             System.out.println("Customer Name:" +name[i]);
+            System.out.println("Customer Id: " +i);
             System.out.println("Customer Telno:" +telno[i]);
             System.out.println("Customer Address:" +address[i]);
         }
     }
 }
-class retail
+public class retail
 {
     public static void main(String[] args)
     {
