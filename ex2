@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class shopping{
+public class retail{
     Scanner s = new Scanner(System.in);
     int id;
     int n,i;
