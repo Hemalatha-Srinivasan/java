@@ -50,4 +50,30 @@ public class retail
 }
 
 
+OUTPUT
+Enter number of customers:2
+
+Enter Customer Name:eefrdsf
+Enter Address:rttytuj
+Enter Telephone No:3654
+
+Enter Customer Name:dxffdg
+Enter Address:kmhgjtry
+Enter Telephone No:8795
+
+*******************
+Customer Details
+*******************
+
+Customer Name:eefrdsf
+Customer Id: 1
+Customer Telno:3654
+Customer Address:rttytuj
+
+Customer Name:dxffdg
+Customer Id: 2
+Customer Telno:8795
+Customer Address:kmhgjtry
+
+
 
